@@ -1,0 +1,47 @@
+.hero-section {
+  padding: 109px 0 67px;
+}
+.hero-wrapper {
+  @include display($jc: space-between);
+}
+.hero-content-wrapper {
+  max-width: 526px;
+}
+.hero-titel {
+  @include titelStyle($fs: 52px, $lh: 125%);
+}
+.hero-text {
+  margin: 40px 0;
+  @include textStyle($fs: 16px, $lh: 150%);
+}
+.hero-text ~ strong {
+  @include strongStyle($f: PT Sans);
+}
+
+.hero-tablet {
+  display: none;
+}
+
+@media (max-width: 990px) {
+  .hero-wrapper {
+    flex-direction: column;
+  }
+  .hero-content-wrapper {
+    width: 100%;
+    margin-bottom: 73px;
+    text-align: center;
+  }
+  .hero-desktop {
+    display: none;
+  }
+  .hero-tablet {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 697px) {
+  .hero-content-wrapper {
+    text-align: start;
+  }
+}

@@ -1,0 +1,35 @@
+
+
+@mixin display($jc:space-between) {
+    display: flex;
+    align-items: center;
+    justify-content: $jc;
+}
+
+@mixin titelStyle ($c:rgb(54, 55, 56), $fs:52px, $lh:125%) {
+    color: $c;
+    font-family: "Exo 2";
+    font-size: $fs;
+    font-weight: 600;
+    line-height: $lh;
+    letter-spacing: 0%;
+}
+
+@mixin textStyle ($fs:16px, $lh:150%) {
+    color: rgb(107, 107, 108);
+    font-family: PT Sans;
+    font-size: $fs; 
+    font-weight: 400;
+    line-height: $lh;
+    letter-spacing: 0%;
+}
+
+@mixin strongStyle ($f:PT Sans) {
+    color: rgb(54, 55, 56);
+    font-family: $f;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+    border-bottom: 3px solid rgb(255, 206, 80);
+}

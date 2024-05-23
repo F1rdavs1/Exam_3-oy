@@ -1,0 +1,56 @@
+.truck-image {
+  background-image: url("../images/truck.png");
+  background-position: right;
+  height: 453px;
+}
+.truck-content {
+  height: 100%;
+  background: linear-gradient(55deg, #0b7572, #0b7572 48%, transparent 48%);
+  display: flex;
+  align-items: center;
+}
+.truck-titel {
+  @include titelStyle($c:rgb(255, 255, 255), $fs:48px);
+  width: 362px;
+  margin-left: 90px;
+}
+.truck-list {
+  margin-top: 72px;
+  @include display;
+  flex-wrap: wrap;
+}
+.truck-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 62px;
+  width: 447px;
+}
+.truck-more-titel {
+  @include titelStyle($fs:20px, $lh:135%);
+}
+.truck-more-text {
+  margin-top: 16px;
+  @include textStyle;
+}
+
+@media (max-width:976px) {
+  .truck-titel {
+    width: 288px;
+  }
+  .truck-image {
+    background-position: left;
+  }
+}
+@media (max-width:939px) {
+  .truck-list {
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+@media (max-width:700px) {
+  .truck-section {
+    display: none;
+  }
+}
